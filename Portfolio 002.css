@@ -228,7 +228,7 @@ body {
     color: whitesmoke;
     font-family: Nunito;
     font-size: large;
-    margin:0 3rem;
+    margin: 0rem 3rem;
 
     opacity: 0;
   transform: translateY(50px); /* Start position for the slide-up effect */
@@ -242,7 +242,7 @@ body {
     display: inline-block;
     padding: 15px;
     border-radius: 25px;
-    margin:  2rem 3rem 0 3rem;
+    margin:  2rem 3rem 0rem 3rem;
     color: whitesmoke;
     opacity: 0;
     transform: translateY(50px); /* Start position for the slide-up effect */
