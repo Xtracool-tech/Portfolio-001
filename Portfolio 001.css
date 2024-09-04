@@ -1,0 +1,1514 @@
+
+
+  
+
+
+*{
+
+padding: 0;
+font-family: Nunito;
+
+}
+
+body{
+   background-color: black; 
+   color: whitesmoke;
+   font-family: nunito;
+}
+
+
+.hidden{
+  opacity: 0;
+    transform: translateY(50px); /* Start position for the slide-up effect */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  padding: 15px;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.hamburger {
+  display: none; /* Initially hidden on larger screens */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+/* Navigation Menu */
+.nav-menu {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-item a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+.background-section{
+    background-image:  rgb(0, 0, 0) url() ;
+    background-repeat: no-repeat;
+    background-position: top;
+    
+    opacity: 100%;
+   
+    position: relative;
+    height: auto; /* Full viewport height */
+    width: auto; /* Full viewport width */
+    overflow: hidden
+
+
+}
+.headtext{
+    background: rgba(0, 0, 0, 0.842);
+    padding: 0;
+    
+}
+.search-container{
+  display: flex;
+  margin: 0%;
+ 
+  /* Initial width to fit the search icon */
+
+  transition: width 0.4s ease; /* Smooth width transition */
+
+}
+
+.search-icon {
+  background-color: #b61414;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 50%;
+  outline: none;
+  transition: transform 0.4s ease; /* Smooth icon movement */
+}
+
+.second-header-section{
+    display: flex;
+    
+    justify-content: space-evenly;
+}
+
+ /* Dropdown Button */
+ .dropbtn {
+   
+
+    
+    
+    border: none;
+  }
+
+  .dropbtn:hover{
+    background-color: #575757;
+    border-radius: 5px;
+  }
+  
+ 
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd; color: #000;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #000;
+    color: rgba(245, 245, 245, 0.685);
+  } 
+
+  .navigation{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    list-style: none;
+    color: whitesmoke;
+    background-color: rgb(0, 0, 0);
+    
+  }
+  .second-header-section{
+    background-color: rgb(0, 0, 0);
+  }
+
+  a{
+
+    text-decoration: none;
+    color: whitesmoke;
+  }
+
+  a:hover {
+
+    color: rgba(245, 245, 245, 0.685);
+  }
+
+  .ds{
+    display: flex;
+  }
+  .chev{
+    color: white;
+  
+    padding: 0;
+    margin-top: -1px;
+
+
+}
+
+.chev2{
+  margin-top: 15px ;
+  margin-right: 20px;
+}
+
+.logo{
+  margin-top: 5px;
+}
+
+.Emerge{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: whitesmoke;
+    font-size: 100px;
+    font-weight: bolder;
+    
+    margin:  10rem 3rem 3rem 3rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(50px); /* Start position for the slide-up effect */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+
+
+
+.visible {
+  opacity: 1;
+  transform: translateY(0); /* Slide to the final position */
+}
+
+
+
+
+
+.hamburger {
+  display: none; /* Initially hidden on larger screens */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+
+
+.at-jimlad{
+    color: whitesmoke;
+    font-family: Nunito;
+    font-size: large;
+    margin: 3rem;
+
+    opacity: 0;
+  transform: translateY(50px); /* Start position for the slide-up effect */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+
+}
+
+#myvideo{
+   
+    z-index: -1000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100vh;
+    width: auto;
+    height: auto;
+    background: rgba(255, 255, 255, 0.911); /* Optional: darkens the video */
+    transform: translate(-50%, -50%);
+    
+}
+
+.book-acall{
+    border: 2px solid whitesmoke;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 25px;
+    margin:  5rem 3rem 0 3rem;
+    color: whitesmoke;
+    opacity: 0;
+    transform: translateY(50px); /* Start position for the slide-up effect */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    
+}
+
+.book-acall:hover{
+
+background-color: whitesmoke;
+color: black;
+cursor: pointer;
+
+}
+
+
+.wad{
+    display: flex;
+    padding: 0px 15px 0px 15px ;
+    gap: 15px;
+    justify-content: space-between;
+    margin:  5rem 0rem 0rem 0rem;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+
+
+    
+} 
+.wad :nth-child(3){
+  border-left: 2px solid whitesmoke;
+  padding: 15px;
+  
+  
+}
+
+.wad :nth-child(4){
+  border-left: 2px solid whitesmoke;
+  padding: 15px;
+  text-align: center;
+  
+}
+
+.wad :nth-child(2){
+  border-left: 2px solid whitesmoke;
+  padding: 15px;
+  
+}
+.wad :nth-child(1){
+  border-left: 2px solid hsla(0, 0%, 96%, 0);
+  padding: 15px;
+  
+}
+input{
+  
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    border-radius: 4rem;
+    border: none;
+    
+
+}
+
+.world{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-family: Nunito;
+  font-size: 2.5rem;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(50px); /* Start position for the slide-up effect */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.search-bar{
+  display: flex;
+  background-color: #f0f0f0;
+
+}
+
+
+
+
+.believe{
+  font-size: 4rem;
+  font-weight: bolder;
+
+  opacity: 0;
+  transform: translateY(50px); /* Start position for the slide-up effect */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+
+}
+
+
+
+.first-main{
+  display: flex;
+  gap: 2rem;
+  background-color: #f1f1f1;
+  color: #000;
+  opacity: 0;
+  transform: translateY(50px); /* Start position for the slide-up effect */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.in-the{
+  font-size: medium;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  opacity: 0;
+  transform: translateY(50px); /* Start position for the slide-up effect */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.taking{
+text-align: center;
+font-size: 4rem;
+font-weight: bolder;
+margin-bottom: 10rem;
+opacity: 0;
+  transform: translateY(50px); /* Start position for the slide-up effect */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+
+
+}
+
+.our-service{
+  margin-top: 10rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: lighter;
+
+  opacity: 0;
+  transform: translateY(50px); /* Start position for the slide-up effect */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+
+}
+
+.second-main{
+  margin-top: 2rem;
+}
+.box-card{
+  border: 2px solid whitesmoke;
+  padding: 15px;
+  border-radius: 2rem;
+  display: flex;
+  gap: 2rem;
+  opacity: 0;
+  transform: translateY(50px); /* Start position for the slide-up effect */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+
+
+.web-dev{
+  font-size: 3rem;
+  font-weight: bolder;
+  opacity: 0;
+  transform: translateY(50px); /* Start position for the slide-up effect */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.importance{
+  font-size: 18px;
+  font-weight: 400;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  opacity: 0;
+  transform: translateY(50px); /* Start position for the slide-up effect */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+
+
+.box-cards{
+ 
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin: 2rem;
+  opacity: 0;
+  transform: translateY(50px); /* Start position for the slide-up effect */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+
+}
+.third-main{
+  background-color: whitesmoke;
+  opacity: 0;
+  transform: translateY(50px); /* Start position for the slide-up effect */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+
+}
+.visit{
+  color: #000;
+  font-size: 3rem;
+  padding: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  opacity: 0;
+  transform: translateY(50px); /* Start position for the slide-up effect */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.blogger{
+  display: flex;
+  margin: 2rem;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  margin: 50px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 35%; /* Show 5 items at once */
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #fff;
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+.carousel-btn:focus {
+  outline: none;
+}
+
+
+
+
+.review-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 50px;
+  background-color: #fff;
+}
+
+.review-card {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-10px);
+}
+
+.reviewer-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #ddd;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+}
+
+.star {
+  font-size: 1.5rem;
+  color: #FFD700; /* Gold color for the stars */
+  margin: 0 2px;
+}
+
+
+
+
+
+
+
+
+
+section.foothy2 {
+  background-color: #000000;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 20px;
+  padding: 0 2rem  0 2rem;
+}
+
+
+section.foothy2 .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.foothy2 p {
+  margin: 10px 0;
+}
+
+section.foothy2 .footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  gap: 15px;
+}
+
+
+
+
+
+section.foothy2 .footer-links a:hover {
+  color: #1e90ff;
+}
+
+section.foothy2 .social-icons {
+  margin-top: 10px;
+}
+
+section.foothy2 .social-icons a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: color 0.3s;
+  
+}
+
+section.foothy2 .social-icons a:hover {
+  color: #1e90ff;
+}
+
+
+
+
+
+.footsec{
+display: grid;
+grid-template-columns: 20% 20% 20% 40%;
+gap: 1rem;
+}
+.liproduct, .divcomp, .classsub{
+font-size: 14px;
+text-align: left;
+margin-top: .25rem;
+
+}
+.ulproduct, .company, .subscriber{
+
+margin-top: 1rem;
+}
+.footcontainer{
+
+display: flex;
+
+}
+.socialm{
+margin-top: 1rem; 
+}
+
+h5{
+text-align: left;
+margin-bottom: .5rem;
+
+}
+.software{
+display: flex;
+flex-direction: row;
+gap: 2rem;
+
+}
+.classsub{
+border-radius: 5rem;
+color: rgb(0, 0, 0);
+background-color: rgb(255, 250, 250);
+margin: 1rem 0rem 2rem 0rem;
+padding: .5rem ;
+font-size: 14px;
+}
+.ulproduct{
+margin: 1rem 0rem 0rem 1rem;  
+}
+
+input{
+background-color: hsla(0, 33%, 98%, 0);
+border-radius: 5px;
+
+}
+.subscriber{
+margin-left: 1rem;
+}
+.allright{
+border-top: 2px solid white;
+padding: 1.5rem 0 5rem 0;
+font-size: medium;
+
+
+}
+
+
+
+
+
+
+
+
+.visible {
+  opacity: 1;
+  transform: translateY(0); /* Slide to the final position */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1201px) {
+
+
+  
+
+  
+
+
+*{
+
+  padding: 0;
+  font-family: Nunito;
+  
+  }
+  
+  body{
+     background-color: black; 
+     color: whitesmoke;
+     font-family: nunito;
+  }
+  
+  
+  .hidden{
+    opacity: 0;
+      transform: translateY(50px); /* Start position for the slide-up effect */
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 15px;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .hamburger {
+    display: none; /* Initially hidden on larger screens */
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+  }
+  
+  /* Navigation Menu */
+  .nav-menu {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-item {
+    margin: 0 10px;
+  }
+  
+  .nav-item a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-item a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+  }
+  
+  .background-section{
+      background-image:  rgb(0, 0, 0) url() ;
+      background-repeat: no-repeat;
+      background-position: top;
+      
+      opacity: 100%;
+     
+      position: relative;
+      height: auto; /* Full viewport height */
+      width: auto; /* Full viewport width */
+      overflow: hidden
+  
+  
+  }
+  .headtext{
+      background: rgba(0, 0, 0, 0.842);
+      padding: 0;
+      
+  }
+  .search-container{
+    display: flex;
+    margin: 0%;
+   
+    /* Initial width to fit the search icon */
+  
+    transition: width 0.4s ease; /* Smooth width transition */
+  
+  }
+  
+  .search-icon {
+    background-color: #b61414;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 50%;
+    outline: none;
+    transition: transform 0.4s ease; /* Smooth icon movement */
+  }
+  
+  .second-header-section{
+      display: flex;
+      
+      justify-content: space-evenly;
+  }
+  
+   /* Dropdown Button */
+   .dropbtn {
+     
+  
+      
+      
+      border: none;
+    }
+  
+    .dropbtn:hover{
+      background-color: #575757;
+      border-radius: 5px;
+    }
+    
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color: #ddd; color: #000;}
+    
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {display: block;}
+    
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {background-color: #000;
+      color: rgba(245, 245, 245, 0.685);
+    } 
+  
+    .navigation{
+      display: flex;
+      flex-direction: row;
+      gap: 3rem;
+      list-style: none;
+      color: whitesmoke;
+      background-color: rgb(0, 0, 0);
+      
+    }
+    .second-header-section{
+      background-color: rgb(0, 0, 0);
+    }
+  
+    a{
+  
+      text-decoration: none;
+      color: whitesmoke;
+    }
+  
+    a:hover {
+  
+      color: rgba(245, 245, 245, 0.685);
+    }
+  
+    .ds{
+      display: flex;
+    }
+    .chev{
+      color: white;
+    
+      padding: 0;
+      margin-top: -1px;
+  
+  
+  }
+  
+  .chev2{
+    margin-top: 15px ;
+    margin-right: 20px;
+  }
+  
+  .logo{
+    margin-top: 5px;
+  }
+  
+  .Emerge{
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      color: whitesmoke;
+      font-size: 100px;
+      font-weight: bolder;
+      
+      margin:  10rem 3rem 3rem 3rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      transform: translateY(50px); /* Start position for the slide-up effect */
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  
+  
+  
+  .visible {
+    opacity: 1;
+    transform: translateY(0); /* Slide to the final position */
+  }
+  
+  
+  
+  
+  
+  .hamburger {
+    display: none; /* Initially hidden on larger screens */
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  
+  
+  .at-jimlad{
+      color: whitesmoke;
+      font-family: Nunito;
+      font-size: large;
+      margin: 3rem;
+  
+      opacity: 0;
+    transform: translateY(50px); /* Start position for the slide-up effect */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  
+  }
+  
+  #myvideo{
+     
+      z-index: -1000;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100vh;
+      width: auto;
+      height: auto;
+      background: rgba(255, 255, 255, 0.911); /* Optional: darkens the video */
+      transform: translate(-50%, -50%);
+      
+  }
+  
+  .book-acall{
+      border: 2px solid whitesmoke;
+      display: inline-block;
+      padding: 15px;
+      border-radius: 25px;
+      margin:  5rem 3rem 0 3rem;
+      color: whitesmoke;
+      opacity: 0;
+      transform: translateY(50px); /* Start position for the slide-up effect */
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      
+  }
+  
+  .book-acall:hover{
+  
+  background-color: whitesmoke;
+  color: black;
+  cursor: pointer;
+  
+  }
+  
+  
+  .wad{
+      display: flex;
+      padding: 0px 15px 0px 15px ;
+      gap: 15px;
+      justify-content: space-between;
+      margin:  5rem 0rem 0rem 0rem;
+      color: whitesmoke;
+      border: 2px solid whitesmoke;
+  
+  
+      
+  } 
+  .wad :nth-child(3){
+    border-left: 2px solid whitesmoke;
+    padding: 15px;
+    
+    
+  }
+  
+  .wad :nth-child(4){
+    border-left: 2px solid whitesmoke;
+    padding: 15px;
+    text-align: center;
+    
+  }
+  
+  .wad :nth-child(2){
+    border-left: 2px solid whitesmoke;
+    padding: 15px;
+    
+  }
+  .wad :nth-child(1){
+    border-left: 2px solid hsla(0, 0%, 96%, 0);
+    padding: 15px;
+    
+  }
+  input{
+    
+      float: right;
+      padding: 6px;
+      border: none;
+      margin-top: 8px;
+      margin-right: 16px;
+      font-size: 17px;
+      border-radius: 4rem;
+      border: none;
+      
+  
+  }
+  
+  .world{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-family: Nunito;
+    font-size: 2.5rem;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px); /* Start position for the slide-up effect */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .search-bar{
+    display: flex;
+    background-color: #f0f0f0;
+  
+  }
+  
+  
+  
+  
+  .believe{
+    font-size: 4rem;
+    font-weight: bolder;
+  
+    opacity: 0;
+    transform: translateY(50px); /* Start position for the slide-up effect */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  
+  }
+  
+  
+  
+  .first-main{
+    display: flex;
+    gap: 2rem;
+    background-color: #f1f1f1;
+    color: #000;
+    opacity: 0;
+    transform: translateY(50px); /* Start position for the slide-up effect */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .in-the{
+    font-size: medium;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(50px); /* Start position for the slide-up effect */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .taking{
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bolder;
+  margin-bottom: 10rem;
+  opacity: 0;
+    transform: translateY(50px); /* Start position for the slide-up effect */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  
+  
+  }
+  
+  .our-service{
+    margin-top: 10rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: lighter;
+  
+    opacity: 0;
+    transform: translateY(50px); /* Start position for the slide-up effect */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  
+  }
+  
+  .second-main{
+    margin-top: 2rem;
+  }
+  .box-card{
+    border: 2px solid whitesmoke;
+    padding: 15px;
+    border-radius: 2rem;
+    display: flex;
+    gap: 2rem;
+    opacity: 0;
+    transform: translateY(50px); /* Start position for the slide-up effect */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  
+  
+  .web-dev{
+    font-size: 3rem;
+    font-weight: bolder;
+    opacity: 0;
+    transform: translateY(50px); /* Start position for the slide-up effect */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .importance{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    opacity: 0;
+    transform: translateY(50px); /* Start position for the slide-up effect */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  
+  
+  .box-cards{
+   
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin: 2rem;
+    opacity: 0;
+    transform: translateY(50px); /* Start position for the slide-up effect */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  
+  }
+  .third-main{
+    background-color: whitesmoke;
+    opacity: 0;
+    transform: translateY(50px); /* Start position for the slide-up effect */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  
+  }
+  .visit{
+    color: #000;
+    font-size: 3rem;
+    padding: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    opacity: 0;
+    transform: translateY(50px); /* Start position for the slide-up effect */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .blogger{
+    display: flex;
+    margin: 2rem;
+  }
+  
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    margin: 50px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    min-width: 35%; /* Show 5 items at once */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #fff;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  
+  .carousel-btn:focus {
+    outline: none;
+  }
+  
+  
+  
+  
+  .review-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-color: #fff;
+  }
+  
+  .review-card {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .review-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .reviewer-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #ddd;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .rating {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .star {
+    font-size: 1.5rem;
+    color: #FFD700; /* Gold color for the stars */
+    margin: 0 2px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  section.foothy2 {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 20px;
+    padding: 0 2rem  0 2rem;
+  }
+  
+  
+  section.foothy2 .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  section.foothy2 p {
+    margin: 10px 0;
+  }
+  
+  section.foothy2 .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    gap: 15px;
+  }
+  
+  
+  
+  
+  
+  section.foothy2 .footer-links a:hover {
+    color: #1e90ff;
+  }
+  
+  section.foothy2 .social-icons {
+    margin-top: 10px;
+  }
+  
+  section.foothy2 .social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s;
+    
+  }
+  
+  section.foothy2 .social-icons a:hover {
+    color: #1e90ff;
+  }
+  
+  
+  
+  
+  
+  .footsec{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 40%;
+  gap: 1rem;
+  }
+  .liproduct, .divcomp, .classsub{
+  font-size: 14px;
+  text-align: left;
+  margin-top: .25rem;
+  
+  }
+  .ulproduct, .company, .subscriber{
+  
+  margin-top: 1rem;
+  }
+  .footcontainer{
+  
+  display: flex;
+  
+  }
+  .socialm{
+  margin-top: 1rem; 
+  }
+  
+  h5{
+  text-align: left;
+  margin-bottom: .5rem;
+  
+  }
+  .software{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  
+  }
+  .classsub{
+  border-radius: 5rem;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 250, 250);
+  margin: 1rem 0rem 2rem 0rem;
+  padding: .5rem ;
+  font-size: 14px;
+  }
+  .ulproduct{
+  margin: 1rem 0rem 0rem 1rem;  
+  }
+  
+  input{
+  background-color: hsla(0, 33%, 98%, 0);
+  border-radius: 5px;
+  
+  }
+  .subscriber{
+  margin-left: 1rem;
+  }
+  .allright{
+  border-top: 2px solid white;
+  padding: 1.5rem 0 5rem 0;
+  font-size: medium;
+  
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  .visible {
+    opacity: 1;
+    transform: translateY(0); /* Slide to the final position */
+  }
+  
+  
+  
+
+}
